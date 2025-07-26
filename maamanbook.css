@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+}
+
+.navigation{
+     background-color: #f5f9fe;
+}
+.header{
+    display: flex;
+    padding: 20px 10px;
+    background-color: #f5f9fe;
+}
+
+
+.header .logo a i{
+  font-size: 2rem;
+  position: relative;
+  top: -10px;
+  color: #101010;
+  margin-left: 20px;
+}
+.header .logo img{
+   width: 150px;
+} 
+
+.header .heading{
+    text-align: center;
+    margin: auto;
+}
+
+.heading h2{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -.41px;
+}
+
+.heading h3{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.show-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.show-info .show-timing{
+    display: flex;
+    align-items: center;
+} 
+
+.show-info .show-timing .movie-time{
+    padding: 10px 20px;
+    border: 1px solid hsla(0,0%,6%,.13);
+    text-align: center;
+    line-height: 24px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.active{
+    background-color: #00b8f5;
+}
+
+#para,#head{
+    color: white;
+}
+
+.movie-time h3 a{
+    color: #21c179;
+}
+
+.show-timing .white{
+    background-color: white;
+}
+
+.booking-method{
+    display: flex;
+    gap: 20px;
+}
+
+.booking-method .confirm{
+    display: flex;
+    gap: 5px;
+}
+
+.booking-method .seat-box{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+.booking-method .available{
+    border: 1px solid #00b8f5;
+}
+
+.booking-method .booked{
+    background-color: gray;
+}
+
+.booking-method .selected{
+    background-color: #00b8f5;
+}
+    
+
+
+
+/* seat */
+
+.seat-section{
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+.seat-section .seat-head{
+    text-align: center;
+}
+
+.seat-container{
+    margin-top: 3% ;
+    /* margin-left: 10%; */
+    overflow-x: scroll;
+}
+.seat-container::-webkit-scrollbar{
+    display: none;
+}
+.seat-rows{
+    display: grid;
+    grid-template-columns: repeat(22,1fr);
+    align-items: center;
+    gap: 3px;
+
+}
+
+.seat-rows span{
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+}
+.seat-rows .col{
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    font-size: 12px;
+    border: 1.5px solid #00b8f5;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #00b8f5;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.seat-rows .col:hover{
+    background-color: #00b8f5;
+    color: white;
+}
+
+.hidden{
+     width: 28px;
+    height: 28px;
+    border:1px solid white ;
+}
+
+
+.screen-image img{
+    margin-top: 100px;
+    margin-left: 27%;
+}
+
+
+/* second-head */
+
+.second-head{
+    height: 30px;
+}
+
+
+/* Scrollbar */
+
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track{
+        background: white;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #00b8f5;
+    }
+
+
+    @media screen and (min-width: 768px) and (max-width:991px){
+   
+   .header .logo img{
+     width: 100px;
+    } 
+   
+    .seat-container{
+    margin-top: 3% ;
+    margin-left: 5%;
+    overflow: scroll;
+    }
+ }
+
+  @media screen and (min-width: 576px) and (max-width:767px){
+    .header .logo img{
+      width: 80px;
+      display: none;
+   } 
+
+   .show-info{
+    display: block;
+   }
+    
+   .booking-method{
+    margin-top: 20px;
+   }
+
+   .seat-section{
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+  }
+    .seat-container{
+    margin-top: 3% ;
+    /* margin-left: 3%; */
+    /* overflow: scroll; */
+    }
+  }
+
+  @media screen and (max-width:575px){
+      .header .logo img{
+      display: none;
+   } 
+
+   .header .logo a i {
+     top: 7px;
+   }
+
+     .show-info{
+     display: block;
+   }
+    
+    .booking-method{
+    margin-top: 20px;
+   }
+
+    .seat-section{
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+  }
+    .seat-container{
+    margin-top: 3% ;
+    }
+
+    .seat-rows span{
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+}
+  }
+
+  
+    @media  screen and (max-width:376px) {
+
+    .header .logo a i {
+          left: -10px;
+    }
+
+    .header {
+    padding: 20px 10px;
+    position: relative;
+    left: -20px;
+}
+
+    .show-info .show-timing .movie-time{
+      width: 150px;
+      padding: 10px ;   
+   }
+
+  }

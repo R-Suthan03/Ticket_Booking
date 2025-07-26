@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:  Raleway, helvetica, sans-serif;
+}
+body{
+    background-color: #eee;
+}
+.container{
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.theatre-name a{
+   color: #101010;
+   font-weight: 400;
+   font-size: 14px;
+
+}
+
+.theatre-name h2{
+    margin-top: 20px;
+    opacity: 0.8;
+    font-weight: 400;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.theatre-name h2:hover{
+    color: #00b8f5;
+}

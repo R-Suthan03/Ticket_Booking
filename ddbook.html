@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="./ddbook.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="logo">
+                <a href="./dd.html"><i class='bx bx-left-arrow-alt'></i></a>
+                <img src="./images/brand_logo_lg.avif" alt="">
+            </div>
+
+            <div class="heading">
+                <h2>Devil's Double Next Level • Tamil</h2>
+
+                <h3>Kamala Cinemas 4K Laser, Vadapalani, Chennai</h3>
+            </div>
+        </div>
+
+
+        <div class="show-info">
+
+            <div class="show-timing">
+                <div class="day">
+                    <p>Sun</p>
+                    <h3>25 May</h3>
+                </div>
+
+                <div class="movie-time active">
+                    <h3 id="para">7:30 AM</h3>
+                    <p id="head">2D</p>
+                </div>
+
+            </div>
+
+            <div class="booking-method">
+                <div class="confirm">
+                    <div class="available seat-box"></div>
+                    <p>Available</p>
+                </div>
+
+                <div class="confirm">
+                    <div class="booked seat-box"></div>
+                    <p>Booked</p>
+                </div>
+
+                <div class="confirm">
+                    <div class="selected seat-box"></div>
+                    <p>Selected</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seat-section">
+
+        <div class="seat-head">
+            <h2>First Class : ₹150</h2>
+        </div>
+
+
+        <div class="seat-container">
+            <div class="seat-rows">
+                <span>A</span>
+                <div class="col book">1</div>
+                <div class="col book">2</div>
+                <div class="col book">3</div>
+                <div class="col book">4</div>
+                <div class="col book">5</div>
+                <div class="col book">6</div>
+                <div class="col book">7</div>
+                <div class="col book">8</div>
+                <div class="col book">9</div>
+                <div class="col book">10</div>
+                <div class="col book">11</div>
+                <div class="col book">12</div>
+                <div class="col book">13</div>
+                <div class="col book">14</div>
+                <div class="col book">15</div>
+                <div class="col book">16</div>
+                <div class="col book">17</div>
+                <div class="col book">18</div>
+                <div class="col book">19</div>
+                <div class="col book">20</div>
+                <div class="col book">21</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>B</span>
+                <div class="col book">1</div>
+                <div class="col book">2</div>
+                <div class="col book">3</div>
+                <div class="col book">4</div>
+                <div class="col book">5</div>
+                <div class="col book">6</div>
+                <div class="col book">7</div>
+                <div class="col book">8</div>
+                <div class="col book">9</div>
+                <div class="col book">10</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col book">11</div>
+                <div class="col book">12</div>
+                <div class="col book">13</div>
+                <div class="col book">14</div>
+                <div class="col book">15</div>
+                <div class="col book">16</div>
+                <div class="col book">17</div>
+                <div class="col book">18</div>
+                <div class="col book">19</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>C</span>
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+                <div class="col">17</div>
+                <div class="col">18</div>
+                <div class="col">19</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>D</span>
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+                <div class="col">17</div>
+                <div class="col">18</div>
+                <div class="col">19</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>E</span>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>F</span>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>G</span>
+              <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>H</span>
+     <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>I</span>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+                <div class="col">17</div>
+                <div class="col">18</div>
+                <div class="col">19</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>J</span>
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+                <div class="col">17</div>
+                <div class="col">18</div>
+                <div class="col">19</div>
+            </div>
+
+            <div class="seat-rows">
+                <span>K</span>
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="hidden"></div>
+                <div class="hidden"></div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <div class="col">13</div>
+                <div class="col">14</div>
+                <div class="col">15</div>
+                <div class="col">16</div>
+                <div class="col">17</div>
+                <div class="col">18</div>
+                <div class="col">19</div>
+            </div>
+
+
+          <div class="screen-image">
+                <img src="./images/screen-icon.svg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
